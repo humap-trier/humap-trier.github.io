@@ -12,6 +12,16 @@ nav ul, footer ul {
     list-style: none;
     font-weight: bold;
 }
+ul {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+}
+li{
+    font-size: 1.2em;
+    padding-bottom: 2em;
+}
 nav ul li, footer ul li {
     display: inline;
     font-size: 1.5em;
