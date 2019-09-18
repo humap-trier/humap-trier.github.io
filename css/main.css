@@ -24,7 +24,7 @@ ul {
 }
 li{
     font-size: 1.2em;
-    padding-bottom: 2em;
+    padding-bottom: 1.2em;
 }
 nav ul li, footer ul li {
     display: inline;
