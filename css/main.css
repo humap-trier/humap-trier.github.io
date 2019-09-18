@@ -5,6 +5,7 @@ body {
 nav p {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     border-bottom: 1px solid #d5d5d5;
+    width: 100%
 }
 nav ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -48,6 +49,9 @@ p {
     line-height: 1.2em;
     color: #333;
     width: 75%
+    text-align: justify;
+    hyphens: auto; 
+    
 }
 footer {
     border-top: 1px solid #d5d5d5;
