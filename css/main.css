@@ -47,9 +47,9 @@ p {
     font-size: 1.2em;
     line-height: 1.2em;
     color: #333;
-    width: 75%
-    text-align: justify;
-    hyphens: auto; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%
     
 }
 footer {
