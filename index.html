@@ -7,4 +7,11 @@ title: HuMap Trier
 Many parts of the world's most vulnerable places are not mapped and are thus "hidden" in printed and digital maps. Humanitarian crises such as natural disasters, 
 disease outbreaks, epidemics or conflicts hit particularly hard when the ground situation is unknown. 
 	Therefore we use our meetings to trace satellite imagery in order to put people at risk onto the map!</p>
+	
+<h3>Recent Blog Posts</h3>
+	<ul class="posts">
+	  {% for post in site.posts %}
+	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+	  {% endfor %}
+	</ul>
 </div><!-- /.blurb -->
