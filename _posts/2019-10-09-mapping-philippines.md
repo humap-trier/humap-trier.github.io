@@ -11,4 +11,4 @@ There is still lots of work to be done in this project, that has been created by
 Farmland outline as depicted in the task instructions
 
 <img src="https://i.postimg.cc/SNQVXvKX/farmland-outlined.png"
-     alt="Farmland outline as depicted in the task instructions" width="400" height="300"/>
+     alt="Farmland outline as depicted in the task instructions" title="Farmland in the Philippines" width="400" height="300"/>
