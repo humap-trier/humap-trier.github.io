@@ -51,6 +51,7 @@ p {
     font-size: 1.2em;
     line-height: 1.2em;
     color: #333;
+    text-align: justify
 }
 footer {
     border-top: 1px solid #d5d5d5;
