@@ -10,6 +10,7 @@ nav p {
     border-bottom: 1px solid #d5d5d5;
 }
 nav ul {
+    display: table;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
@@ -30,7 +31,9 @@ li{
     padding-bottom: 1.2em;
 }
 nav ul li{
-    display: inline;
+    vertical-align: middle;
+    /*display: inline;*/
+    display: table-cell;
     font-size: 1.2em;
     margin-right: 20px;
 }
