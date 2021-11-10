@@ -2,11 +2,59 @@
 layout: default
 title: HuMap Trier
 ---
-<div class="blurb">		
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/humap-trier/humap-trier.github.io/master/images/collage.png"
-					    alt="" width="600"/></p>
-<p>We are a group of students at Trier University whose primary mission is to contribute Volunteered Geographic Information (VGI) for humanitarian emergency response actions. 
-Many parts of the world's most vulnerable places are not mapped and are thus "hidden" in printed and digital maps. Humanitarian crises such as natural disasters, 
-disease outbreaks, epidemics or conflicts hit particularly hard when the ground situation is unknown. 
-	Therefore we use our meetings to trace satellite imagery in order to put people at risk onto the open map OpenStreetMap!</p>
-</div><!-- /.blurb -->
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   		integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   		crossorigin=""/>
+		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+		integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+		crossorigin=""></script>
+		<style>
+			#map {
+				height: 250px;
+				margin: auto;
+			}
+			h2 {
+				text-align: center;
+				margin: auto;
+				padding-bottom: 16px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="blurb">		
+		<p style="text-align: center;"><img src="https://raw.githubusercontent.com/humap-trier/humap-trier.github.io/master/images/collage.png"
+							    alt="" width="600"/></p>
+		<p>We are a group of students at Trier University whose primary mission is to contribute Volunteered Geographic Information (VGI) for humanitarian emergency response actions. 
+		Many parts of the world's most vulnerable places are not mapped and are thus "hidden" in printed and digital maps. Humanitarian crises such as natural disasters, 
+		disease outbreaks, epidemics or conflicts hit particularly hard when the ground situation is unknown. 
+			Therefore we use our meetings to trace satellite imagery in order to put people at risk onto the open map OpenStreetMap!</p>
+		</div>
+		<h2> Meeting point</h2>
+		<div id="map" style="width: 600px; height: 400px;"></div>			
+		<script>
+			var map = L.map('map').setView([49.75, 6.676], 15);
+
+			var redIcon = new L.Icon({
+				iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+				shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+				iconSize: [25, 41],
+				iconAnchor: [12, 41],
+				popupAnchor: [1, -34],
+				shadowSize: [41, 41]
+			});
+
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+			}).addTo(map);
+
+			L.marker([49.74820, 6.67574], {icon: redIcon}).addTo(map)
+				.bindPopup('Room F14 - Meeting point for in-person mapathons')
+				.openPopup();
+		</script>
+		<!-- /.blurb -->
+	</body>
+</html>
